@@ -1,0 +1,203 @@
+/* Add custom styles here */
+.section1 {
+  background-color: #7C3030;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  margin-right: 10px; /* Adjust the margin to control the space between nav links */
+}
+
+.nav-link:last-child {
+  margin-right: 0; /* Remove right margin for the last nav item */
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: aliceblue;
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.section2 {
+  background-color: #7C3030;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sec-it1 {
+  width: 40%;
+}
+
+.section3 {
+  background-color: #f5dcaf;
+  padding-top: 50px;
+}
+
+.sec2-btn,
+.sec3-btn {
+  background-color: #7C3030;
+  padding: 15px;
+  border-radius: 45px;
+  border-color: aliceblue;
+  width: 150px;
+  font-size: larger;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sec2-btn:hover,
+.sec3-btn:hover {
+  background-color: #f5dcaf;
+  color: black;
+  border-color: black;
+}
+
+.col-3 {
+  align-items: center;
+}
+
+.itl,
+.price {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.item-card {
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.item-card:hover {
+  transform: scale(1.15);
+  background-color: #923c3c;
+  border-radius: 10px;
+}
+
+.section3 .plus-button {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black; /* Changed to black */
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  display: flex;
+}
+
+.section4 {
+  background-color: #f5dcaf;
+}
+
+.sec4-pic {
+  width: 90%;
+  border-radius: 20px;
+}
+
+#a1 {
+  text-align: right;
+  padding-right: 55px;
+}
+
+.sp {
+  font-weight: bold;
+}
+
+.cap {
+  padding-top: 20px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.Au {
+  padding-left: 10px;
+  padding-bottom: 120px;
+}
+
+.footer {
+  background-color: #7C3030;
+  color: #f5dcaf;
+}
+
+.footerDec {
+  color: #f5dcaf;
+  transition: color 0.3s;
+  text-decoration: none; /* Remove underline */
+  display: block;
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.footerDec:hover {
+  color: aliceblue;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  margin: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  color: #7C3030;
+  text-align: center;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #7C3030;
+  color: #e5e5e5;
+}
+
+hr.custom-hr {
+  border: 1px white ;
+  height: 3px;
+  background: #fdfcfc;
+  margin: 20px 0;
+}
+
+.footerDecF {
+  text-align: right;
+  color: #f1f1f1;
+  transition: color 0.3s;
+}
+
+.footerDecF:hover {
+  color: rgb(201, 228, 251);
+}
+
